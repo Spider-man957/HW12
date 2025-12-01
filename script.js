@@ -82,3 +82,49 @@
 //   return a.price * a.quantity;
 // }
 // console.log(calculateTotalPrice(products, "Windows"));
+
+// дз: 13
+// Використати деструктуризацію об’єктів у всіх завданнях з попередньої ДЗ
+// 1/
+// const { name, hobby, premium } = editTeXt(nameOfUser);
+// console.log(name + ", " + hobby + ", " + premium);
+
+// 2/
+// employees = { ann: 29, david: 35, helen: 1, lorence: 99 };
+// const { ann, david, helen, lorence } = employees;
+
+// 3/
+// let a = { tom: 1000, mary: 1000, david: 2005 };
+// const {tom, mary, david} = a;
+// console.log(tom, mary, david);
+
+// 4/
+// let a = [
+//   { name: "Mango", age: 20, personalLogan: "ARRRRR" },
+//   { name: "Poly", age: 18 },
+// ];
+// const { name, age, personalLogan } = a[0];
+// const { name: name1, age: age1 } = a[1];
+// console.log(name, age, personalLogan, name1, age1);
+
+// 5/
+const products = [
+  { name: "I-phone", price: 3000, quantity: 4 },
+  { name: "Androd", price: 2700, quantity: 3 },
+  { name: "Windows", price: 5000, quantity: 7 },
+];
+const {name, price, quantity} = products[0];
+const {name: name1, price: price1, quantity: quantity1} = products[1];
+const { name: name2, price: price2, quantity: quantity2} = products[2];
+console.log(
+  name,
+  price,
+  quantity,
+  name1,
+  price1,
+  quantity1,
+  name2,
+  price2,
+  quantity2
+);
+
